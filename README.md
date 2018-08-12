@@ -7,32 +7,17 @@ kyoto-b チームのサーバーサイドについて
 ### ソースファイルを準備する
 
 ```bash
+# ソースコードを取得する
 $ git clone https://github.com/0918nobita/kyoto-b-api.git
 $ cd kyoto-b-api
 ```
 
-### mariaDB の Docker イメージの導入
+### MySQL 仮想環境を準備する
 
-docker-compose.yml
+```bash
+# ./docker-compose.yml からコンテナをビルドする
+$ docker-compose build
 
-```yml
-version: '2'
-services:
-  db:
-    build: ./db/
-    environment:
-      MYSQL_ROOT_PASSWORD: your_password
-      MYSQL_DATABASE: your_schema
-    ports:
-      - "3306:3306"
-  app:
-    build: ./app/
-    ports:
-      - "8080:80"
-    links:
-      - db
-    volumes:
-      - ./src:/var/www/html
-    stdin_open: true
-    tty: true
+# コンテナをバックグランドで実行する
+$ docker-compose up -d
 ```
