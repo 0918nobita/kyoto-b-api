@@ -1,0 +1,12 @@
+-- ユーザー情報を格納するテーブルを作成
+CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `password` char(64) NOT NULL,
+  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- サンプルレコードの挿入
+INSERT INTO `users` (`name`, `password`) VALUES ('Matsumoto', 'E47089C9E704B549DD596AFD4345349A07533A0DD5021FB56D666DDB728B84C2');
