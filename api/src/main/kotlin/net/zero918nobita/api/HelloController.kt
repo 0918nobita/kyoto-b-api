@@ -7,5 +7,6 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class HelloController(private val greeter: Greeter) {
   @GetMapping("hello")
-  fun hello(@RequestParam(value = "name", required = false) name: String): String = greeter.hello(name)
+  fun hello(@RequestParam(value = "name", required = false) name: String) =
+          greeter.hello(name)
 }
