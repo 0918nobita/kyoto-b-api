@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("")
 class UsersController {
   @GetMapping("users")
-  fun index() = SqlExecutor.findAll()
+  fun index() = SqlExecutor.findAllUsers()
 }

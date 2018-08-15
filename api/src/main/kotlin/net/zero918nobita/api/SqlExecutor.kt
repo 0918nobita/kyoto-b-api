@@ -11,7 +11,7 @@ object SqlExecutor {
     connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/test", Config.username, Config.password)
   }
 
-  fun findAll(): List<String> {
+  fun findAllUsers(): List<String> {
     val stmt = connection.createStatement()
     stmt.executeQuery("SELECT * FROM users")
     val resultSet = stmt.resultSet
