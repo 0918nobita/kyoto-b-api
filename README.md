@@ -20,4 +20,7 @@ $ docker-compose build
 
 # コンテナをバックグランドで実行する
 $ docker-compose up -d
+
+# Docker 上の MySQL に接続する
+$ mysql -h 127.0.0.1 --port 3306 -u root -p root
 ```
