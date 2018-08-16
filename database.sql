@@ -1,7 +1,7 @@
--- ユーザー情報を格納するテーブルを作成
 CREATE TABLE `users` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) NOT NULL,
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(20) NOT NULL UNIQUE,
+  `user_screen_name` varchar(20) NOT NULL,
   `password` char(64) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
