@@ -1,5 +1,6 @@
-package net.zero918nobita.api
+package net.zero918nobita.api.controllers
 
+import net.zero918nobita.api.Task
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
