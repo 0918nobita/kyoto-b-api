@@ -1,4 +1,4 @@
-package net.zero918nobita.api
+package net.zero918nobita.api.models
 
 import java.sql.Connection
 import java.sql.DriverManager
