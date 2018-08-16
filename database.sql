@@ -15,6 +15,14 @@ CREATE TABLE `users` (
   -- `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Table 4: 1対1ルームの情報を格納するテーブルを作成
+CREATE TABLE `pairs` (
+  `room_id` int NOT NULL AUTO_INCREMENT,
+  `user_id_1` int NOT NULL,
+  `user_id_2` int NOT NULL,
+  PRIMARY KEY (`room_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
