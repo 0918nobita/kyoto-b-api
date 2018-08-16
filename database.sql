@@ -1,3 +1,11 @@
+-- Table 1: ルーム情報を格納するテーブルを作成
+CREATE TABLE `rooms` (
+  `room_id` int NOT NULL AUTO_INCREMENT,
+  `room_name` varchar(20) NOT NULL UNIQUE,
+  PRIMARY KEY (`room_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Table 3: ユーザー情報を格納するテーブルを作成
 CREATE TABLE `users` (
   `user_id` int NOT NULL AUTO_INCREMENT,
   `user_name` varchar(20) NOT NULL UNIQUE,
