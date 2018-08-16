@@ -11,6 +11,10 @@ CREATE TABLE `users` (
   `user_name` varchar(20) NOT NULL UNIQUE,
   `user_screen_name` varchar(20) NOT NULL,
   `password` char(64) NOT NULL,
+  -- `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  -- `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
