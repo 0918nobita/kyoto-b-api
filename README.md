@@ -20,11 +20,9 @@ $ docker-compose build
 
 # コンテナをバックグランドで実行する(1)
 $ docker-compose up -d
-
-# Docker 上の MySQL に接続する
-$ mysql -h 127.0.0.1 --port 3306 -u root -p root
-
-# database.sql 内にある SQL 文を順番に実行する
 ```
+
+DBの設定は自動で行われ、``mysql/init`` ディレクトリ (コンテナ側の ``/docker-entrypoint-initdb.d`` ディレクトリと同期される) 内の  
+``.sql`` ファイルが実行されて各テーブルが生成される
 
 (1) キャッシュを消去して新たにビルドし直す場合、 ``docker-compose up -d --force-recreate --build`` を実行する
