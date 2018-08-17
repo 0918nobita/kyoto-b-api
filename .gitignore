@@ -1,3 +1,6 @@
 mysql/*
 !mysql/init/*
+!mysql/Dockerfile
+!mysql/my.cnf
+!mysql/
 !.gitkeep
