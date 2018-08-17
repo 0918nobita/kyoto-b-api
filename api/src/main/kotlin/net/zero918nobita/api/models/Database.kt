@@ -3,7 +3,7 @@ package net.zero918nobita.api.models
 import java.sql.Connection
 import java.sql.DriverManager
 
-object SqlExecutor {
+object Database {
   var connection: Connection
 
   init {

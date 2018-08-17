@@ -4,7 +4,7 @@ import net.zero918nobita.api.entities.User
 
 object UsersModel {
   fun findAllUsers(): List<User> {
-    val stmt = SqlExecutor.connection.createStatement()
+    val stmt = Database.connection.createStatement()
     stmt.executeQuery("SELECT * FROM users")
     val resultSet = stmt.resultSet
 
