@@ -1,6 +1,6 @@
 package net.zero918nobita.api.controllers
 
-import net.zero918nobita.api.models.SqlExecutor
+import net.zero918nobita.api.models.UsersModel
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("")
 class UsersController {
   @GetMapping("users")
-  fun index() = SqlExecutor.findAllUsers()
+  fun index() = UsersModel.findAllUsers()
 }
