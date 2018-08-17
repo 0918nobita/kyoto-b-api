@@ -1,3 +1,5 @@
+USE test;
+
 -- Table 1: ルーム情報を格納するテーブルを作成
 CREATE TABLE `rooms` (
   `room_id` int NOT NULL AUTO_INCREMENT,
