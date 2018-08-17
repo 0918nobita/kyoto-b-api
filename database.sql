@@ -3,7 +3,7 @@ CREATE TABLE `rooms` (
   `room_id` int NOT NULL AUTO_INCREMENT,
   `room_name` varchar(20) NOT NULL UNIQUE,
   PRIMARY KEY (`room_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Table 3: ユーザー情報を格納するテーブルを作成
 CREATE TABLE `users` (
@@ -22,7 +22,7 @@ CREATE TABLE `pairs` (
   `user_id_1` int NOT NULL,
   `user_id_2` int NOT NULL,
   PRIMARY KEY (`room_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Table 5: メッセージの情報を格納するテーブルを作成
 CREATE TABLE `messages` (
@@ -32,7 +32,7 @@ CREATE TABLE `messages` (
   `message` varchar(140) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`message_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- サンプルレコードの挿入
 INSERT INTO `users` (`name`, `password`) VALUES ('Matsumoto', 'E47089C9E704B549DD596AFD4345349A07533A0DD5021FB56D666DDB728B84C2');
