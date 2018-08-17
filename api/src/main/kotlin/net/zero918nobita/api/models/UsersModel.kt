@@ -10,7 +10,7 @@ object UsersModel {
 
     val result = mutableListOf<User>()
     while (resultSet.next()) {
-      result.add(User(id = resultSet.getLong(1),
+      result.add(User(userId = resultSet.getLong(1),
                       userName = resultSet.getString(2),
                       userScreenName = resultSet.getString(3),
                       password = resultSet.getString(4)))
