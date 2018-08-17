@@ -1,3 +1,3 @@
-mysql_data/*
-docker-entrypoint-initdb.d/*
+mysql/*
+!mysql/init/*
 !.gitkeep
