@@ -34,7 +34,7 @@ CREATE TABLE `messages` (
   `message_id` int NOT NULL AUTO_INCREMENT,
   `sender_id` int NOT NULL,
   `room_id` int NOT NULL,
-  `message` varchar(140) NOT NULL,
+  `content` varchar(140) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`message_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
