@@ -19,7 +19,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- サンプルレコードの挿入
-INSERT INTO `users` (`user_name`, 'user_screen_name', `password`) VALUES ('Matsumoto', 'E47089C9E704B549DD596AFD4345349A07533A0DD5021FB56D666DDB728B84C2');
+INSERT INTO `users` (`user_name`, `user_screen_name`, `password`) VALUES ('kodai', 'Matsumoto Kodai', 'E47089C9E704B549DD596AFD4345349A07533A0DD5021FB56D666DDB728B84C2');
 
 -- Table 4: 1対1ルームの情報を格納するテーブルを作成
 CREATE TABLE `pairs` (
